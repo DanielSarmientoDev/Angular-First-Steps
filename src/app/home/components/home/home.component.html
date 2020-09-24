@@ -1,1 +1,7 @@
-<h1>Contenido del Home</h1>
+<div class="character-grid">
+  <app-card-characters
+    *ngFor="let character of character['results']"
+    [character]="character"
+  >
+  </app-card-characters>
+</div>

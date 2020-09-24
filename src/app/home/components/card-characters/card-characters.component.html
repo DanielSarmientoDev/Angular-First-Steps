@@ -1,0 +1,19 @@
+<mat-card class="card-character">
+  <mat-card-header>
+    <mat-card-title>{{ character.name }}</mat-card-title>
+  </mat-card-header>
+  <img
+    mat-card-image
+    src="{{ character.image }}"
+    alt="Photo of a Shiba Inu"
+    class="crop-image"
+  />
+  <mat-card-content>
+    <h3>Status: {{ character.status }}</h3>
+    <h3>Gender: {{ character.gender }}</h3>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="warn">Detail</button>
+    <a mat-raised-button color="primary">Ver detalle</a>
+  </mat-card-actions>
+</mat-card>

@@ -10,6 +10,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { AboutComponent } from './about/components/about/about.component';
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +26,7 @@ import { AboutComponent } from './about/components/about/about.component';
     MatButtonModule,
     BrowserAnimationsModule,
     MatToolbarModule,
+    HttpClientModule,
   ],
   exports: [],
   providers: [],
