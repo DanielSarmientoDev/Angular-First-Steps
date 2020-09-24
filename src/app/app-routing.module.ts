@@ -8,9 +8,19 @@ const routes: Routes = [
     component: LayoutComponent,
     children: [
       {
+        path: '',
+        redirectTo: '/home',
+        pathMatch: 'full',
+      },
+      {
         path: 'home',
         loadChildren: () =>
           import('./home/home.module').then((m) => m.HomeModule),
+      },
+      {
+        path: 'about',
+        loadChildren: () =>
+          import('./about/about.module').then((m) => m.AboutModule),
       },
     ],
   },
